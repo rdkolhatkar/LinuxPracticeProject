@@ -1,0 +1,3 @@
+Hello World !
+This is a Simple text file.
+Have a nice day !
