@@ -41,3 +41,9 @@ mv test.txt ../../rkdir/
 # Move and rename a file
 mv file1.txt /home/user/Documents/file2.txt
 # This command will move "file1.txt" to the "Documents" directory in the user's home directory and rename it to "file2.txt". Make sure to replace "user" with your actual username. After executing this command, "file1.txt" will no longer be in its original location and will be moved to the specified destination with the new name "file2.txt".
+# To remove a file, folder or directory, you can use the rm command. For example:
+rm file.txt
+# This command will delete the file named "file.txt" from the current directory. Be cautious when using the rm command, as it permanently deletes files and directories without moving them to a trash or recycle bin. Always double-check the file name and path before executing the rm command to avoid accidentally deleting important files. If you want to remove a directory and its contents, you can use the -r (recursive) option with the rm command. For example:
+rm -r directory_name
+# This command will delete the directory named "directory_name" and all its contents. Again, be cautious when using this command, as it will permanently delete the directory and its contents without any confirmation. Always double-check the directory name and path before executing the rm -r command to avoid accidentally deleting important directories and files.
+
