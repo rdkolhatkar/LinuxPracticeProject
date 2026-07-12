@@ -592,4 +592,7 @@ find /home/ratnakar -type f -name "*.log" \( -size +5M -o -mtime -7 \)
 # This will find regular files with a .log extension that are either larger than 5 megabytes OR modified within the last 7 days, but only within the /home/ratnakar directory and its subdirectories    
 find /home/ratnakar -type f -name "*.log" \( -size +5M -or -mtime -7 \) -and ! -name "error*"
 # This will find regular files with a .log extension that are either larger than 5 megabytes OR modified within the last 7 days, but only within the /home/ratnakar directory and its subdirectories, and excludes files that start with "error" in their name 
+find '('-size +200M -atime -30 -or -size +500M ')'
+# This will find files that are either larger than 200 megabytes and accessed within the last 30 days OR larger than 500 megabytes, regardless of access time.
+# in above syntax we are using parentheses to group conditions, and the -or operator to combine them. The -atime option checks for files accessed within the last 30 days, while the -size option checks for file sizes.
 
